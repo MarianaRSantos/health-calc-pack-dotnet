@@ -4,7 +4,7 @@ using Xunit;
 
 namespace health_calc_test_xunit
 {
-    public class UnitTest1
+    public class IMCTest
     {
         [Fact]
         public void When_RequestIMCCalcWithValidData_ThenReturnIMCIndex()
@@ -80,37 +80,38 @@ namespace health_calc_test_xunit
             Assert.Throws<Exception>(() => IMC.Calc(Height, Weight));
 
         }
-            //[Fact]
-            //public void When_RequestIMCCalcWithValidData_ThenReturnInfinity()
-            //{
-            //    //Arrange
-            //    var IMC = new IMC();
-            //    var Height = 0;
-            //    var Weight = 85;
-            //    var Expected = double.PositiveInfinity;
+        //[Fact]
+        //public void When_RequestIMCCalcWithValidData_ThenReturnInfinity()
+        //{
+        //    //Arrange
+        //    var IMC = new IMC();
+        //    var Height = 0;
+        //    var Weight = 85;
+        //    var Expected = double.PositiveInfinity;
 
-            //    //Act
-            //    var Result = IMC.Calc(Height, Weight);
+        //    //Act
+        //    var Result = IMC.Calc(Height, Weight);
 
 
-            //    //Assert           
-            //    Assert.Equal(Expected, Result);
+        //    //Assert           
+        //    Assert.Equal(Expected, Result);
 
-            //}
-            //[Theory]
-            //[InlineData(17.5, "Abaixo do peso")]
-            //[InlineData(18.49, "Abaixo do peso")]
-            //[InlineData(18.50, "Peso normal")]
-            //[InlineData(24.99, "Peso normal")]
-            //[InlineData(25, "Pré-obesidade")]
-            //[InlineData(29.99, "Pré-obesidade")]
-            //[InlineData(30, "Obesidade grau 1")]
-            //[InlineData(34.99, "Obesidade grau 1")]
-            //[InlineData(35, "Obesidade grau 2")]
-            //[InlineData(39.99, "Obesidade grau 2")]
-            //[InlineData(40, "Obesidade grau 3")]
-            //[InlineData(45, "Obesidade grau 3")]
-            public void When_RequestIMCCategory_ThenReturnCategory(double IMC, string ExpectedResult)
+        //}
+
+        [Theory]
+        [InlineData(17.5, "Abaixo do peso")]
+        [InlineData(18.49, "Abaixo do peso")]
+        [InlineData(18.50, "Peso normal")]
+        [InlineData(24.99, "Peso normal")]
+        [InlineData(25, "Pré-obesidade")]
+        [InlineData(29.99, "Pré-obesidade")]
+        [InlineData(30, "Obesidade grau 1")]
+        [InlineData(34.99, "Obesidade grau 1")]
+        [InlineData(35, "Obesidade grau 2")]
+        [InlineData(39.99, "Obesidade grau 2")]
+        [InlineData(40, "Obesidade grau 3")]
+        [InlineData(45, "Obesidade grau 3")]
+        public void When_RequestIMCCategory_ThenReturnCategory(double IMC, string ExpectedResult)
         {
             //Arrange
             var Imc = new IMC();
