@@ -9,7 +9,7 @@
     <Description>Biblioteca para Cálculo de Saúde (IMC e Macronutrientes)</Description>
     <RepositoryUrl>https://github.com/MarianaRSantos/health-calc-pack-dotnet</RepositoryUrl>
     <PackageIcon>icone.png</PackageIcon>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <PackageId>health-calc-pack-dotnet-mariana</PackageId>
   </PropertyGroup>
 

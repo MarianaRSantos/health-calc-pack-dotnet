@@ -2,8 +2,8 @@
 {
     public class MacroNutrienteModel
     {
-        public int Carboidratos  { get; set; }
-        public int Proteínas { get; set; }
-        public int Gorduras { get; set; }
+        public double Carboidratos  { get; set; }
+        public double Proteinas { get; set; }
+        public double Gorduras { get; set; }
     }
 }
