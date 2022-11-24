@@ -31,8 +31,8 @@ var ResultMacroNutrienteModel = objMacronutriente.Calc(SexoEnum,
    health_calc_pack_dotnet.Enums.ObjetivoFisicoEnum.Cutting);
 
 Console.WriteLine("Seu consumo de Macronutriente deve ser => " +
-    $"Proteínas:  { ResultMacroNutrienteModel.Proteinas}gramas, " +
-    $"Carboidratos: { ResultMacroNutrienteModel.Carboidratos}gramas, " +
-    $"Gorduras:  { ResultMacroNutrienteModel.Gorduras}gramas");
+    $"Proteínas:  { ResultMacroNutrienteModel.Proteinas} gramas, " +
+    $"Carboidratos: { ResultMacroNutrienteModel.Carboidratos} gramas, " +
+    $"Gorduras:  { ResultMacroNutrienteModel.Gorduras} gramas");
 
 Console.ReadKey();
